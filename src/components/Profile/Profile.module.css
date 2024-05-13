@@ -1,73 +1,76 @@
-.userImg{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: black;
-}
-.mainDiv{
-    width: 200px;
-    border: 2px solid black;
-    border-radius: 10px;
+.card {
+    width: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fafafa;
-    padding: 15px 0 0 0;
-    gap: 10px;
-    margin-bottom: 60px;
-}
-.name{
-    font-size: 20px;
-    font-weight: 700;
-}
-.tag, .location{
-    color: grey;
-    font-size: 12px;
-    font-weight: 400;
-    text-align: center;
-}
-.list{
-    border-top: 1px solid rgb(46, 46, 46);
-    padding: 10px;
-    border-radius: 0 0 8px 8px;
-    margin: 0;
-    width: 190px;
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 0;
-    background-color: grey;
-}
-.listItem{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    align-items: center;
-    justify-content: center;
-}
-.listItem::after{
-    position: absolute;
-    right: -15px;
-    content: " ";
-    width: 1px;
-    height: 56.8px;
-    z-index: 999;
-    background-color: black;
-}
-.listItemSpanF{
-    font-size: 12px;
-    color: rgb(42, 41, 41);
-    font-weight: 400;
-}
-.listItemSpans{
-    font-size: 12px;
-    color: rgb(42, 41, 41);
-    font-weight: 600;
-}
-.list :nth-child(3)::after{
-    display: none;
+    border: 2px solid #242328;
+    border-radius: 5px;
+    background-color: #fdf7f8;
+    margin-bottom: 50px;
 }
 
+.userCard {
+    height: 225px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 0 0;
+    gap: 6px;
+    margin-bottom: 10px;
+
+}
+.avatar {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background-color: #242328;
+}
+
+.userName {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    color: black;
+}
+
+.location,
+.tag {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #979293;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e3dbdd;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #979293;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    gap: 5px;
+}
+
+.listItemTitle {
+ font-weight: 400;
+}
+
+.listItemValue {
+ font-weight: 600;
+}
